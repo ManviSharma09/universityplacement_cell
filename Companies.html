@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+     border-radius: 50px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+a
+{
+ color:blue;
+ text-decoration: none;
+ font-family: "comic sans ms";
+}
+h1
+{
+    font-size:40px;
+    font-style:"comic sans ms";
+}
+</style>
+</head>
+<body style="background:url(Photos/chitkara.jpg) no-repeat fixed center;height: 100%">
+<h1><center>PLACEMENT CELL</h1></center>
+<nav><center>
+	<div class="dropdown">
+  <button class="dropbtn">COMPANIES</button>
+  <div class="dropdown-content">
+    <a href="https://www.infosys.com/">INFOSYS</a>
+    <a href="Wipro.pdf">WIPRO</a>
+    <a href="Amazon2.pdf">AMAZON</a>
+    <a href="https://www.oyorooms.com/about">OYO ROOMS</a>
+    <a href="https://en.wikipedia.org/wiki/MakeMyTrip">MAKE MY TRIP</a>
+    </div>
+</div>
+        <button class="dropbtn"><a style="color: white" href="Register.html">REGISTER</a></button>
+    <button class="dropbtn"><a style="color: white" href="Internship.html">INTERNSHIPS</a></button>
+    <button class="dropbtn"><a style="color: white" href="Indutrial.html">INDUSTIAL EXCURSIONS</button>
+    <button class="dropbtn"><a style="color: white" href="Guest.html">GUEST LECTURES</button>
+    <button class="dropbtn"><a style="color: white" href="workshops.html">TRAINING WORKSHOPS</button>
+    <button class="dropbtn"><a style="color: white" href="Aboutus.html">ABOUT US</button>
+    <button class="dropbtn"><a style="color: white" href="contact.html">CONTACT US</a></button>
+</center></nav> <br><br>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="Photos/10.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="Photos/11.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="Photos/12.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="Photos/13.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="Photos/9.jpg" style="width:100%">
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>

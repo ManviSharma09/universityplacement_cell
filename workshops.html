@@ -1,0 +1,168 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 1300px; /* Should be removed. Only for demonstration */
+}
+
+.left, .right {
+  width: 25%;
+}
+
+.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.dropbtn {
+    background-color: blue;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: skyblue;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: blue}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: darkblue;
+}
+a{
+  text-decoration: none;
+  font-family: "comic sans ms";
+}
+h1
+{
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+
+<center><h1><a>TRAINING WORKSHOPS</a></h1></center>
+<nav><center>
+  <div class="dropdown">
+  <button class="dropbtn"><a href="Companies.html">COMPANIES</a></button>
+  <div class="dropdown-content">
+    <a href="https://www.infosys.com/">INFOSYS</a>
+    <a href="Wipro.pdf">WIPRO</a>
+    <a href="Amazon2.pdf">AMAZON</a>
+    <a href="https://www.oyorooms.com/about">OYO ROOMS</a>
+    <a href="https://en.wikipedia.org/wiki/MakeMyTrip">MAKE MY TRIP</a>
+    </div>
+</div>
+        <button class="dropbtn"><a style="color: white" href="Register.html">REGISTER</a></button>
+    <button class="dropbtn"><a style="color: white" href="Internship.html">INTERNSHIPS</a></button>
+    <button class="dropbtn"><a style="color: white" href="Indutrial.html">INDUSTIAL EXCURSIONS</button>
+    <button class="dropbtn"><a style="color: white" href="Guest.html">GUEST LECTURES</button>
+    <button class="dropbtn"><a style="color: white" href="workshops.html">TRAINING WORKSHOPS</button>
+    <button class="dropbtn"><a style="color: white" href="Aboutus.html">ABOUT US</button>
+    <button class="dropbtn"><a style="color: white" href="contact.html">CONTACT US</a></button>
+</center></nav> 
+<div class="row">
+  <div class="column left" style="background-color:white;">
+    <center><h2>ENGINEERING IS FUN</h2></center>
+    <div id="d1">
+    <img src="Photos/p1.jpg" width="300" height="300">
+    <img src="Photos/p2.jpg" width="300" height="300"> 
+    <img src="Photos/p3.jpg" width="300" height="300">
+    <img src="Photos/p4.jpg" width="300" height="300"></div>
+  </div>
+  <div class="column middle" style="background-color:white;">
+   <center><h2 id="manvi">WORKSHOPS</h2></center>
+   <div class="columnmiddle">
+   <p><b style="color: blue">Chitkara university</b> always comes up with different training workshops to train its students in various fields.Every year many training workshops are organized in various subjects.Some are highlighted below:-</p>
+   <ol>
+     <li>Workshop on Manufacturing practices</li>
+     <li>Workshop on UI/Web Development</li>
+     <li>Workshop on Industrial training on Androiod</li>
+   </ol>
+   <ul>
+   	<li>
+   		<p><b style="color: blue">Manufacturing practices:-</b>This workshops helps the budding engineers to gain industrial knowledge.This prepares them to work further for industry.The engineers gain industrial knowledge,they learn to work with various type machinery helpful in various fields like:</p>
+   		<ol>
+   			<li>Carpentry</li>
+   			<li>Electrical</li>
+   			<li>Machine</li>
+   			<li>Fitting</li>
+   			<li>Welding</li>
+   			<li>Sheet Metal</li>
+   			<li>PC Hardware</li>
+   		</ol>
+   		<p>Below given is the link to check the scope of this workshop:-</p>
+   		<a href="manufacturing practices.pdf">Scope</a>
+   	</li>
+    <li>
+      <p><b style="color: blue">UI/Web Development:-</b>This workshop helps our CSE engineers to learn about web development.Detail knowledge about various web developing tools is given.Engineers are well trained to work and create various websites.</p>
+      <p>Below is the list highlighted about are the most important web tools:-</p>
+      <ol>
+      <li>Sublime Text</li>
+      <li>Chrome Developer Tools</li>
+      <li>Jquery</li>
+      <li>Githubs</li>
+      <li>Twitter Bootstrap</li>
+      <li>Angular js</li>
+      <li>Sass</li>
+      </ol> 
+      <p>Below given is the link to a webpage that describes details of this workshop</p>
+      <a href="https://careerfoundry.com/en/blog/web-development/7-essential-tools-for-front-end-development/">Details</a> 
+    </li>
+   </ul>
+     <p style="background-color: lightblue;">Here is a list of the upcoming events at CHITKARA UNNIVERSITY
+     <ul>
+       <li>Faculty Enrichment Program on “Current Developments in Applied Sciences: An Interdisciplinary Approach”</li>
+       <li>Workshop on “Organizing research for supervisor”</li>
+       <li>Workshop on “Effective literature review for PhD work”</li>
+       <li>Workshop on “Identifying publication destinations for PhD work”</li>
+       <li>Workshop on “Frame work of PhD programme and conduct of supervision at Chitkara University”</li>
+     </ul></p>
+   </div>
+  </div>
+  <div class="column right" style="background-color:white;">
+    <center><h2>WORK AND LEARN</h2></center>
+    <div id="d1"><img src="Photos/p5.jpg" width="300" height="300">
+    <img src="Photos/p6.jpg" width="300" height="300">
+    <img src="Photos/p7.jpg" width="300" height="300">
+    <img src="Photos/p8.jpg" width="300" height="300"></div>
+  </div>
+</div>
+
+</body>
+</html>

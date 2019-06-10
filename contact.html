@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>contact form</title>
+<meta content="noindex, nofollow" name="robots">
+<!-- Include CSS File Here-->
+
+<style type="text/css">
+    body{
+margin:0;
+padding:0;
+font-family:'Roboto Slab',serif
+}
+#first{
+width:400px;
+height:610px;
+box-shadow:0 0 0 1px rgba(14,41,57,0.12),0 2px 5px rgba(14,41,57,0.44),inset 0 -1px 2px rgba(14,41,57,0.15);
+float:left;
+padding:10px 50px 0;
+margin:2% 30%;
+background-color:lightgrey;
+}
+hr{
+border:none;
+border-bottom:1px solid #ccc;
+margin-bottom:40px
+}
+h4{
+margin-top:-20px
+}
+span{
+float:left;
+font-size:17px
+}
+span.spn1{
+margin-top:13px
+}
+input{
+width:300px;
+padding:10px;
+border:3px solid #e1e1e1;
+margin-bottom:25px
+}
+textarea{
+width:300px;
+padding:10px;
+border:3px solid #e1e1e1;
+height:100px;
+margin-bottom:25px
+}
+input.name{
+margin-left:25px
+}
+input.email{
+margin-left:27px
+}
+input.male{
+width:50px;
+margin-left:7px;
+margin-bottom:15px;
+height:17px
+}
+input.female{
+width:50px;
+margin-left:72px;
+margin-bottom:15px;
+height:17px
+}
+input.submit{
+width:100px;
+font-weight:700;
+margin-left:86px;
+cursor:pointer;
+background-color:#336BFF;
+font-family:'Roboto Slab',serif;
+border:2px solid #fff
+}
+</style>
+<script type="text/javascript">
+    function myFunction()
+    {
+        alert("Form is submitted successfully!")
+    }
+</script>
+</head>
+<body style="background-color: #336BFF;background:url(PHOTOS/chitkara.jpg)no-repeat fixed center;height:100%">
+<div id="first">
+<form onsubmit="myFunction()">
+<center><h1>Contact Form</h1></center>
+<center><h4>Please fill all entries.</h4></center>
+<span class="spn1">ID:</span>&nbsp;
+<input class="name" name="dname" type="text" required>
+<span class="spn1">Name:</span>&nbsp;
+<input class="email" name="demail" type="email" required>
+<span class="spn1">Pass.</span>&nbsp;
+<input class="email" name="pno" type="number" maxlength="10" minlength="10" required>
+<span>Gender :
+<input class="male" name="gender" type="radio" value="male">Male
+<input class="female" name="gender" type="radio" value="female">Female
+</span>
+<span>Message :</span>&nbsp;
+<textarea class="msg" name="msg" required>
+</textarea>
+<input class="submit" name="dsubmit" type="submit" value="Submit" >
+</form>
+</div>
+</body>
+</html>

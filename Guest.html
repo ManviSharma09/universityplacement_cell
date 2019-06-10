@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 1300px; /* Should be removed. Only for demonstration */
+}
+
+.left, .right {
+  width: 25%;
+}
+
+.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.dropbtn {
+    background-color: red;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: pink;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: red}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: darkred;
+}
+a
+{
+ text-decoration: none;
+ font-family: "comic sans ms";
+}
+a{
+  text-decoration: none;
+  font-family: "comic sans ms";
+}
+h1
+{
+  text-decoration: none;
+}
+p{
+    align-content: justify;
+    font-family: "harrington";
+    font-size: 30px;
+}
+ol{
+  align-content: justify;
+    font-family: "harrington";
+    font-size: 30px;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="project.css">
+</head>
+<body>
+
+<center><h1 style="color:black;" ><a>GUEST LECTURE</a></h1></center>
+<nav><center>
+  <div class="dropdown">
+  <button class="dropbtn"><a href="Companies.html">COMPANIES</a></button>
+  <div class="dropdown-content">
+    <a href="https://www.infosys.com/">INFOSYS</a>
+    <a href="Wipro.pdf">WIPRO</a>
+    <a href="Amazon2.pdf">AMAZON</a>
+    <a href="https://www.oyorooms.com/about">OYO ROOMS</a>
+    <a href="https://en.wikipedia.org/wiki/MakeMyTrip">MAKE MY TRIP</a>
+    </div>
+</div>
+        <button class="dropbtn"><a style="color: white" href="Register.html">REGISTER</a></button>
+    <button class="dropbtn"><a style="color: white" href="Internship.html">INTERNSHIPS</a></button>
+    <button class="dropbtn"><a style="color: white" href="Indutrial.html">INDUSTIAL EXCURSIONS</button>
+    <button class="dropbtn"><a style="color: white" href="Guest.html">GUEST LECTURES</button>
+    <button class="dropbtn"><a style="color: white" href="workshops.html">TRAINING WORKSHOPS</button>
+    <button class="dropbtn"><a style="color: white" href="Aboutus.html">ABOUT US</button>
+    <button class="dropbtn"><a style="color: white" href="contact.html">CONTACT US</a></button>
+</center></nav> 
+ 
+<div class="row">
+  <div class="column left" style="background-color:lavenderblush;">
+    <center><h2>AUDITORIUM</h2></center>
+    <div id="d1"><img src="Photos/1.jpg" width="300" height="300">
+    <img src="Photos/2.jpg" width="300" height="300"> 
+    <img src="Photos/3.jpg" width="300" height="300">
+    <img src="Photos/4.jpg" width="300" height="300"></div>
+  </div>
+  <div class="column middle" style="background-color:lavenderblush;">
+   <center><h2 id="manvi">UNIVERSITY</h2></center>
+   <fony face="harrington" size=10>
+   <p align="CENTRE">
+     Round the year, guest talks, seminars and workshops are organized wherein eminent personalities
+     from the corporate world and renowned institutions are invited to share real life experiences with
+     students. A good blend of theory and practice is experienced by students.
+     Guest lecturers at a college are usually up-and-comers, experts or well-known in their field.
+     Colleges ask guest speakers to the campus for a variety of reasons. A teacher might invite a successful
+     alumnus to come to the classroom and speak with students about how they broke into their field.
+     <br>
+     
+     Guest lecturers need not be limited to campus-based courses. College professors from distance learning and online
+     courses may also incorporate guest speakers into the curriculum. For example, online professors at Penn State may 
+     invite a guest speaker to hold a weeklong ongoing chat with students. Although the students do not get the opportunity 
+     to hear them speak in person, they still benefit from the interaction.  
+    </p>
+    <ol>
+    <li> Industry Growth & Employability of Engineers by Oak Brook Business School by Mr Sumit.</li>                               
+    <li>   Opportunities for Study Abroad in France by Campus of France, Ahmedabad.</li> 
+    <li>  Expert lecture on Industrial Automation by NTTF Mr Subodh Technical Head. </li> 
+    <li>  Workshop on Personality Development & Communication Skills by Expert Edu care.</li>  
+    <li>  IT awareness seminar by Smit Digital Pvt Ltd </li> 
+    <li>  Seminar on Soft Skills areas by TIMES EDUCATION. </li>  
+    </ol>
+   </FONT>
+  </div>
+  <div class="column right" style="background-color:lavenderblush;">
+    <center><h2>GUESTS</h2></center>
+    <div id="d1"><img src="Photos/5.jpg" width="300" height="300">
+    <img src="Photos/6.jpg" width="300" height="300">
+    <img src="Photos/7.jpg" width="300" height="300">
+    <img src="Photos/8.jpg" width="300" height="300"></div>
+</div>
+  </div>
+</div>
+</body>
+</html>

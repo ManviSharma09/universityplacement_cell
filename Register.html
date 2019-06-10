@@ -1,0 +1,66 @@
+<html>
+<head>
+<script type="text/javascript" >
+function fun1()
+{
+	var a=document.getElementById("t3").value;
+	var b=9876;
+	if(a==b)
+	{
+		
+		document.getElementById("p4").style.visibility="visible";
+		document.getElementById("t4").style.visibility="visible";
+		document.getElementById("btn3").style.visibility="visible";
+	}
+	else
+{
+document.getElementById("wer").innerHTML="Please enter the correct the password";
+}
+}
+function fun2()
+{
+	var a=document.getElementById("t4").value;
+	if(a>=9)
+	{
+		document.getElementById("wet").innerHTML="Eligible for Amazon,Wipro,OYO,MAKE my trip,Infosys";
+	}
+	else if(a>=7&&a<9)
+	{
+		document.getElementById("wet").innerHTML="Eligible for Wipro,OYO,MAKE my trip";
+	}
+	else if(a>=6)
+	{
+		document.getElementById("wet").innerHTML="Eligible for INFOSYS";
+	}
+	else
+	{
+		document.getElementById("wet").innerHTML="Not Eligible";
+	}
+}
+</script>
+<style>
+p
+{
+	font-size:30px;
+	font-family:"harrington";
+	
+}
+</style>
+</head>
+<body style="background-color:lightgreen">
+<h1 style="font-size:40px;"><center><u>ELIGIBILITY CRITERIA</u></center></h1>
+<div style="text-align:center">
+<pre>
+<p>NAME:</p><input type="text" id="t1">
+<p>ID:</p><input type="text">
+<p>ENTER THE GIVEN KEY:</p><input type="text" id="t3">
+<button onclick="fun1()" id="btn1">ENROLL</button>
+<p id="p4" style="visibility:hidden;" >CGPA:</p>
+<input type="number" id="t4" style="visibility:hidden;">
+<button onclick="fun2()" style="visibility:hidden;" id="btn3">APPLY</button>
+<p id="wer"></p>
+<p id="wet"></p>
+</pre>
+</div>
+</body>
+</html>
